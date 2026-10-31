@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Réservation – CAN</title>
+    <link rel="stylesheet" href="style-1.css">
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+    <header class="haut">
+        <img src="logo.png" alt="Logo CAN" class="imtop">
+        <h1>Compagnie Alsacienne de Navigation</h1>
+    </header>
+
+    <div class="millieu">
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li class="current-menu"><a href="reservation.html">Réservation</a></li>
+                <li><a href="cartes-_dembarquement.html">Cartes d'embarquement</a></li>
+                <li><a href="facture.html">Facture</a></li>
+                <li><a href="TableauDeBord.html">Tableau de bord</a></li>
+            </ul>
+        </nav>
+
+        <main class="mainreservation">
+            <h2>Nouvelle réservation</h2>
+
+            <form id="formReservation">
+                <fieldset class="bloc-form">
+                    <legend>Informations générales</legend>
+
+                    <label for="nomReservation">Nom de la réservation</label>
+                    <input type="text" id="nomReservation" name="nomReservation" required>
+
+                    <label for="liaison">Liaison</label>
+                    <select id="liaison" name="liaison" required>
+                        <option value="1">Lorient – Groix</option>
+                        <option value="2">Groix – Lorient</option>
+                        <option value="3">Quiberon – Le Palais</option>
+                        <option value="4">Le Palais – Quiberon</option>
+                    </select>
+
+                    <label for="date">Date (novembre 2025)</label>
+                    <input type="date" id="date" name="date" min="2025-11-01" max="2025-11-30" required>
+
+                    <label for="heure">Heure de départ</label>
+                    <select id="heure" name="heure" required>
+                        <option value="09:45">09:45</option>
+                        <option value="12:15">12:15</option>
+                        <option value="17:00">17:00</option>
+                        <option value="19:30">19:30</option>
+                    </select>
+                </fieldset>
+
+                <fieldset class="bloc-form">
+                    <legend>Passagers</legend>
+
+                    <div id="zonePassagers">
+                        <div class="ligne-passager">
+                            <input type="text" class="nomP" placeholder="Nom" required>
+                            <input type="text" class="prenomP" placeholder="Prénom" required>
+                            <select class="codeCatP" required>
+                                <option value="adu26p">Adulte 26 ans et plus</option>
+                                <option value="jeu1825">Jeune 18 à 25 ans inclus</option>
+                                <option value="enf417">Enfant 4 à 17 ans inclus</option>
+                                <option value="bebe">Bébé moins de 4 ans</option>
+                                <option value="ancomp">Animal de compagnie</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="button" id="btnAjoutPassager">+ Ajouter un passager</button>
+                </fieldset>
+
+                <fieldset class="bloc-form">
+                    <legend>Véhicules</legend>
+
+                    <div id="zoneVehicules">
+                        <div class="ligne-vehicule">
+                            <select class="codeCatV">
+                                <option value="">(aucun)</option>
+                                <option value="trot">Trottinette électrique</option>
+                                <option value="velo">Vélo ou remorque à vélo</option>
+                                <option value="velelec">Vélo électrique</option>
+                                <option value="cartand">Vélo cargo / tandem</option>
+                                <option value="mobil">Deux-roues ≤ 125 cm³</option>
+                                <option value="moto">Deux-roues &gt; 125 cm³</option>
+                                <option value="cat1">Voiture &lt; 4 m</option>
+                                <option value="cat2">Voiture 4 – 4.39 m</option>
+                                <option value="cat3">Voiture 4.40 – 4.79 m</option>
+                                <option value="cat4">Voiture 4.80 m et plus</option>
+                                <option value="camp">Camping-car &gt; 2.10 m</option>
+                            </select>
+                            <input type="number" class="quantiteV" min="1" value="1">
+                        </div>
+                    </div>
+
+                    <button type="button" id="btnAjoutVehicule">+ Ajouter un véhicule</button>
+                </fieldset>
+
+                <div class="actions-form">
+                    <button type="submit">Générer la réservation</button>
+                    <span id="message"></span>
+                </div>
+            </form>
+
+            <pre id="aperçuJson" class="aperçu-json"></pre>
+        </main>
+    </div>
+
+    <footer class="bas">
+        <p class="textbas">© 2025 – Compagnie Alsacienne de Navigation</p>
+    </footer>
+
+    <script src="reservation.js"></script>
+</body>
+</html>

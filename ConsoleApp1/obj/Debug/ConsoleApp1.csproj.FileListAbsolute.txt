@@ -1,0 +1,2 @@
+C:\Users\pigod\Documents\sae11\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+C:\Users\pigod\Documents\sae11\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache

@@ -1,0 +1,74 @@
+header img{
+  max-height: 25mm;
+  display: block;
+  margin: 0 auto;
+}
+
+h2 {
+	display : block;
+	text-align : center;
+  margin: 0;
+}
+p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 12px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+}
+
+td, th {
+  border: 1px solid black;
+  padding: 4px;
+  text-align: center;            
+}
+.right {
+	text-align : right;
+}
+.total {
+  margin-top: auto; /* pousse le total en bas */
+  font-size: 14px;
+}
+section{
+	text-align : center;
+}
+
+section, p{
+  text-align: left;
+  
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+  margin: 0;
+  background: white;
+}
+
+/* Encadré A4 */
+main {
+  width: 210mm;
+  height: 297mm;
+
+  border: 2px solid black;
+  padding: 25mm;
+
+  box-sizing: border-box;
+  background: white;
+
+  display: flex;
+  flex-direction: column;
+  gap: 6mm;
+}
+
+
+
+h3 {
+  margin: 6mm 0 2mm;
+}

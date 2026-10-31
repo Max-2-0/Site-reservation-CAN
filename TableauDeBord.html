@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8" />
+    <title>Tableau de bord</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header class = "haut">
+        <img class="imtop" src="img/CAN.png" alt="Logo">
+        <h1>Compagnie Alsacienne de Naviga  tion</h1>
+
+    </header>
+    <div class="millieu">
+    <nav>
+        <aside>
+            <ul>
+                <li><a href= "index.html">Accueil</a></li>
+                <li><a href ="cartes _dembarquement.html">Carte d'embarquement</a></li>
+                <li><a href ="facture.html">Facture</a></li>
+                <li><a href ="TableauDeBord.html">Tableau de bord</a></li>
+                <li><a href ="statistiques.html">Statistiques</a></li>
+            </ul>
+        </aside>
+    </nav>
+
+    <main>
+        <section id="principal">
+            <h2>Tableau de bord</h2>
+            <label for="dateremise">Taux de remplissage le :    </label>
+            <input id="dateremise" name="dateremise" type="date" value="2025-11-01">
+            <form>
+                <fieldset>
+                    <legend> Traversée souhaitée </legend>
+                    <select>
+                        <option value="1">Lorient - Groix</option>
+                        <option value="2">Groix - Lorient</option>
+                        <option value="1">Quiberon - Le Palais</option>
+                        <option value="2">Le Palais - Quiberon</option>
+                    </select>
+                </fieldset>
+            </form>
+        </section>
+
+        <section id="tdb">
+            <table class="horaire-table">
+                <tr>
+                    <th>Horaires</th>
+                    <th>Taux de Passagers</th>
+                    <th>Taux de véhicules</th>
+                </tr>
+                <tr>
+                    <td>mettre les horaires qui doivent être stockées quelques parts I guess</td>
+                    <td>mettre une barre type download qui varie de 0% à 100% en fonction du pourcentage de passagers</td>
+                    <td>même type que pour passager (vert jusqu'à 50%, orange entre 50% et 75%, rouge de 75% à 100% etjaune fluo au dela).</td>
+                </tr>
+                <tr>
+                    <td>18h45</td>
+                    <td>75%</td>
+                    <td>67%</td>
+                </tr>
+            </table>        
+        </section>
+
+    </main>
+</div>
+</body>
+<footer class="bas">
+    <img class="imgbas" src="img/CAN.png" alt="Logo">
+    <p class="textbas">Siège social : IUT Robert Schuman - BUT Informatique - Illkirch</p>
+</footer>
+</html> 

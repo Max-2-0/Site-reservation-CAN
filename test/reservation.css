@@ -1,0 +1,104 @@
+main.mainreservation {
+    margin-top: 25px;
+    border: 2px solid black;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+main.mainreservation h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+}
+
+form#formReservation {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.bloc-form {
+    border: 2px solid #0a5992;
+    border-radius: 10px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.bloc-form legend {
+    font-weight: bold;
+    color: #0a5992;
+}
+
+.bloc-form label {
+    font-weight: 600;
+}
+
+.bloc-form input,
+.bloc-form select {
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 0.9rem;
+}
+
+.ligne-passager,
+.ligne-vehicule {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.ligne-passager input,
+.ligne-passager select,
+.ligne-vehicule select,
+.ligne-vehicule input {
+    flex: 1;
+}
+
+#btnAjoutPassager,
+#btnAjoutVehicule,
+.actions-form button {
+    background-color: #FFA500;
+    color: #fafafa;
+    border: none;
+    border-radius: 999px;
+    padding: 0.4rem 0.9rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#btnAjoutPassager:hover,
+#btnAjoutVehicule:hover,
+.actions-form button:hover {
+    background-color: #ffb733;
+    color: black;
+}
+
+.actions-form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+#message {
+    font-weight: bold;
+    color: darkgreen;
+}
+
+.aperçu-json {
+    margin-top: 1rem;
+    background: #111;
+    color: #0f0;
+    padding: 0.8rem;
+    border-radius: 8px;
+    max-height: 200px;
+    overflow: auto;
+    font-size: 0.8rem;
+}

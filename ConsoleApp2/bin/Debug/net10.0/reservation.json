@@ -1,0 +1,17 @@
+[
+  {
+    "nom": "clem",
+    "idLiaison": 1,
+    "date": "2025-11-11",
+    "heure": "09:45",
+    "horodatage": "2026-01-07 18:53:20",
+    "passagers": [
+      {
+        "nom": "c",
+        "prenom": "g",
+        "codeCategorie": "adu26p"
+      }
+    ],
+    "vehicules": []
+  }
+]

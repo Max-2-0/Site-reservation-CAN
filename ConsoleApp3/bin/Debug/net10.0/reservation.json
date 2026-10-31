@@ -1,0 +1,38 @@
+[
+  {
+    "reservation": {
+      "nom": "clem",
+      "idLiaison": 4,
+      "date": "2025-11-15",
+      "heure": "14:15",
+      "horodatage": "2026-01-08 10:16:10"
+    },
+    "passagers": [
+      {
+        "nom": "Godard",
+        "prenom": "Clement",
+        "codeCategorie": "adu26p"
+      },
+      {
+        "nom": "Siegel",
+        "prenom": "Axel",
+        "codeCategorie": "jeu1825"
+      },
+      {
+        "nom": "Whilem",
+        "prenom": "Nathan",
+        "codeCategorie": "ancomp"
+      }
+    ],
+    "vehicules": [
+      {
+        "codeCategorie": "trot",
+        "quantite": 5
+      },
+      {
+        "codeCategorie": "cat3",
+        "quantite": 3
+      }
+    ]
+  }
+]

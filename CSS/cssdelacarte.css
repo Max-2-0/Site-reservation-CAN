@@ -1,0 +1,103 @@
+/* ----------------------------- */
+/* Mise en page générale         */
+/* ----------------------------- */
+
+body {
+	background-color : blue;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+main {
+    width: 80%;
+    margin: auto;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* ----------------------------- */
+/* Logo CAN                      */
+/* ----------------------------- */
+
+.image_carte {
+    width: 180px;
+}
+
+/* ----------------------------- */
+/* SECTION PRINCIPALE            */
+/* ----------------------------- */
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* remonte tout */
+    height: 450px;
+    padding: 1rem;
+    color: white;
+}
+
+
+/* ----------------------------- */
+/* Titre en haut à droite        */
+/* ----------------------------- */
+
+section h2 {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+	margin-top: -4rem; /* ajuste la hauteur ici */
+}
+
+/* ----------------------------- */
+/* Bloc infos à gauche           */
+/* ----------------------------- */
+
+.infos-gauche {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    width: 300px;
+}
+
+.infos-gauche p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+aside {
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    padding: 0.4rem 0.8rem;
+    width: fit-content;
+    font-weight: bold;
+}
+
+/* ----------------------------- */
+/* Carte d’embarquement          */
+/* ----------------------------- */
+
+section article {
+    align-self: flex-end;
+    margin-top: -20rem; /* ajuste la hauteur ici */
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding: 1rem 1.5rem;
+    width: 260px;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+
+
